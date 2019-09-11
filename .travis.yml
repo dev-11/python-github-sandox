@@ -3,8 +3,9 @@ python:
   - "3.7"
 install:
   - pip install -r requirements.txt
+  - pip install codecov
 script:
-  - pytest tests.py
+  - codecov run tests.py
 
 after_success:
   - codecov
