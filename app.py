@@ -11,7 +11,6 @@ def hello():
 def fun(a):
   i = 10
   return i + a
-  i += 1
 
 if __name__ == '__main__':
     app.run(debug=True, port=5006)
