@@ -13,4 +13,5 @@ def fun(a):
   return i + a
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5006)
+    app.config.from_object('config')
+    app.run(port=5006)
