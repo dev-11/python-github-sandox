@@ -27,3 +27,6 @@ comment:
 
 ignore:
   - "test*.py"
+  - "**/config.py"
+  - "config.py"
+
