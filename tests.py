@@ -1,4 +1,4 @@
-from my_app import fun
+from app import fun
 
 def test_normal():
     pass
