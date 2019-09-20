@@ -1,4 +1,4 @@
-target = __import__("app.py")
+target = __import__("my_app")
 
 def test_normal():
     pass
