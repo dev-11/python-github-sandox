@@ -5,8 +5,10 @@ install:
   - pip install -r requirements.txt
   - pip install codecov
   - pip install pytest-cov
+  - pip install codeclimate-test-reporter
 script:
   - pytest tests.py --cov-report=xml --cov=.
+  - codeclimate-test-reporter --file .coverage
 
 after_success:
   - codecov
