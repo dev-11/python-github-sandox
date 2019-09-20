@@ -8,7 +8,7 @@ def test_normal_2():
     pass
 
 def test_3():
-    a = target.fun(1)
+    a = target.app.fun(1)
     assert a == 2
     
     
