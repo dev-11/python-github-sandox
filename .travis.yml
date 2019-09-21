@@ -16,7 +16,7 @@ before_script:
 script:
   #- pytest tests.py --cov-report=xml --cov=.
   #- codeclimate-test-reporter --file .coverage
-  - coverage run app.py
+  - coverage run -m pytest tests.py --cov-report=xml --cov=.
   - ./cc-test-reporter after-build -r 66344bea55310e5bc39a8a71683c4c2552ab064ae08e8a96ebf36f9111770bae
 
 after_success:
