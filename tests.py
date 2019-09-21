@@ -1,13 +1,12 @@
 from app import fun
-
-def test_normal():
-    pass
+import unittest
 
 
-def test_normal_2():
-    pass
+class Test(unittest.TestCase):
 
-def test_3():
-    a = fun(1)
-    assert a == 11
+    def test_fun(self):
+        a = fun(1)
+        self.assertEqual(a, 11, "Should be 11")
 
+if __name__ == '__main__':
+    unittest.main()
