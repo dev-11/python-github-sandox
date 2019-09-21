@@ -14,8 +14,9 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 script:
-  - pytest tests.py --cov-report=xml --cov=.
+  #- pytest tests.py --cov-report=xml --cov=.
   #- codeclimate-test-reporter --file .coverage
+  - coverage run app.py
   - ./cc-test-reporter after-build -r 66344bea55310e5bc39a8a71683c4c2552ab064ae08e8a96ebf36f9111770bae
 
 after_success:
