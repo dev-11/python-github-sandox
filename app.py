@@ -3,10 +3,10 @@ from flask import Flask, request, escape
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route("/")
 def hello():
     name = request.args.get("name", "World")  # asdf
-    return f'Hello, {escape(name)}!'
+    return f"Hello, {escape(name)}!"
 
 
 def fun(a):
@@ -14,7 +14,6 @@ def fun(a):
     return i + a
 
 
-if __name__ == '__main__':
-    app.config.from_object('config')
+if __name__ == "__main__":
+    app.config.from_object("config")
     app.run(port=5006)
-
