@@ -1,0 +1,5 @@
+#!/bin/sh
+
+root_folder=`git root`
+
+( cd $root_folder && make format && make lint)
